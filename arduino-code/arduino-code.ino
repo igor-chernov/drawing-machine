@@ -59,7 +59,7 @@ digitalWrite(11,LOW);
 
 
 int getPixel(){
-char tmp=arr[((int)index/8)];
+char tmp=pgm_read_byte_near(arr+((int)index/8));
 
 return ((tmp >> index%8) & 0x01);
 }
