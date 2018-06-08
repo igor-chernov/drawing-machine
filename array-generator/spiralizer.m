@@ -1,8 +1,8 @@
 clear;
-ars=12000; %number of dots produced
-im1=imread("m.bmp");
-im(:,:)=double(im1(:,:,1) +im1(:,:,2)+im1(:,:,3)); %converting to grayscale
-im=floor(im/256.0+0.7*rand(640,640)); %converting to pure
+ars=25000; %number of dots produced
+im=imread("m.bmp");
+%im(:,:)=double(im1(:,:,1) +im1(:,:,2)+im1(:,:,3)); %converting to grayscale
+im=floor(im/256.0+0.5*rand(640,640)); %converting to pure
 %figure 1;
 %imshow(im,[0 1]);
 
